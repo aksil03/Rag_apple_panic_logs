@@ -1,49 +1,49 @@
-Guide de Diagnostic des Kernel Panics iPhone
+# Guide de Diagnostic des Kernel Panics iPhone
 
-Méthode de récupération du log
+## Méthode de récupération du log
 Pour trouver le rapport de crash sur l'appareil :
 1. Aller dans Réglages > Confidentialité > Analyses et améliorations > Données d'analyse.
 2. Faire défiler jusqu'aux fichiers commençant par "panic-full..." et cliquer sur le plus récent.
 
-Correspondances par génération
+# Correspondances par génération
 
-iPhone 12 series and older:
+## iPhone 12 series and older
 - mic1 : charging port flex (SE 2020 could be a board issue)
 - mic2 : power button flex
 - prs0 : charging port flex
 - tg0b : battery, battery connector or battery data line
 - ans2 : NAND related
 
-iPhone 13 series:
+## iPhone 13 series
 - 0x800 : charging port flex
 - 0x1000 : proximity flex
 - 0x1800 : charging port flex & proximity flex cable
 - 0x400 : sandwich separation
 
-iPhone 14 & iPhone 14 Plus:
+## iPhone 14 et iPhone 14 Plus
 - 0x400000 : Wireless Charging Flex (Back Glass)
 - 0x100000 : Charging Port Flex
 - 0x500000 : Check the taptic engine as well as the charging port flex or a communication problem with the battery
 - 0x200000 : Proximity Flex Cable
 
-iPhone 14 Pro & iPhone 14 Pro Max:
+## iPhone 14 Pro et iPhone 14 Pro Max
 - 0x80000 : proximity flex
 - 0x40000 : charging port flex
 - 0x10000 : power button flex
 - 0x20000 : sandwich separation
 
-iPhone 15 & iPhone 15 Plus:
+## iPhone 15 et iPhone 15 Plus
 - 0x200000 : Wireless Charging Flex (Back Glass)
 - 0x80000 : Charging Port Flex
 - 0x100000 : Proximity Flex Cable
 
-iPhone 15 Pro & iPhone 15 Pro Max:
+## iPhone 15 Pro et iPhone 15 Pro Max
 - 0xa1 : battery
 - 0x300000 : Charging Port Flex
 - 0x400000 : Wireless Charging Flex
 - 0x700000 : Charging Port + Wireless Charging Flex
 
-Universal Codes iPhone 13 up (Hex + Decimal):
+# Universal Codes iPhone 13 up (Hex + Decimal)
 - 0x20 (32) — Charging circuit
 - 0x40 (64) — Gas gauge
 - 0x41 (65) — Battery data
